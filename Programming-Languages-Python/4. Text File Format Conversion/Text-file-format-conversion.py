@@ -1,4 +1,4 @@
-# Programming Languages Fall 2019 Python Group, Text file format coversion
+# Programming Languages Fall 2019 Python Group, Text file format conversion
 
 # Creates and clears a new text file
 open('namesSplit.txt', 'w').close()
