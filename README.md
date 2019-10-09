@@ -53,8 +53,23 @@ Alan Turing:0
 Note that first and last names can contain spaces. The delimiter between fields in the original file will be colon (:), not space. 
 
 ### 5. Concurrency
+Two agents are exploring a 9x9 grid of square rooms:
+```
+ 	1	2	3
+ 	4	5	6
+ 	7	8	9
+```
+You can think of the agents as human or robotic explorers who are moving through the rooms looking for treasures. Each square is connected to the adjacent squares above, below, and next to it; for example, square 2 is connected to squares 1, 5, and 3. There are no diagonal connections. Agent 1 starts at square 1, and agent 2 starts at square 9. The goal is for all of the treasures to have been found by one of the two agents. (Typically, some of the treasures will be found by agent 1 and some by agent 2, although this may vary from one run to the next.) The two agents should work concurrently, using two different search strategies for exploring the maze. (For example, one strategy might be to go north if that's possible, then east as a second choice, south as a third choice, and west as a fourth choice. Another might be to choose a random direction at each step.) As soon as all the treasures have been found, both agents should stop looking for treasures.
+There are four treasures: an emerald, a crown, a coin, and a rare book. At the beginning of the game, place the four treasures into four different rooms in the maze. As each treasure is found, the program should print which treasure was found, and which agent found it. This will give the user a sense of the progress of the search. At the end, the program should inform the user that the search has been successful and that all the treasures have been found.
+
+(If you are working in a language in which conventional output is difficult, you may accumulate the information about treasure-finding in a list or similar data structure, and then return or display this list at the end of the program run.)
 
 ### 6. Semester homework problem
+Solve the semester homework problem (that is, the problem you've solved in Scheme, Ada, and Prolog) in your chosen language. If needed, you may adapt the input/output format of the problem to fit your language. For example, you may use conventional input/output, or you may write a function that takes the "input" as its parameters and returns the "output" value, or you may use a web-based interface.
+
+## Built with
+* [Python](https://www.python.org) - Programming language
+* [PyCharm](https://www.jetbrains.com/pycharm/) - Python IDE
 
 ## Authors
 * Anthony Tesoriero, B.S. in Computer Science at Rowan University - [Info](http://anttes.com)
