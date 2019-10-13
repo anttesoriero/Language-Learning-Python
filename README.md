@@ -4,14 +4,17 @@ The purpose of these assignments is to learn a new programming language.
 
 ## Assignments
 ### 1. Beginner's program
+###### Status: Complete (9-Oct-19)
 Write a program that will read two numbers and will compute the sum of those two numbers. (If you are working in a functional language, you may write a function that takes two numbers as input parameters and returns the sum of the two numbers.)
 
 ### 2. Simple repetition
+###### Status: Complete (9-Oct-19)
 Write a program that will read a sequence of numbers and will compute the sum of those numbers.
 
 Note: If your language supports lists, your input can be a list (e.g., [10, 6, 2, 8, 12]). Otherwise, have the user enter a special value to indicate the end of the input, or ask the user at the beginning of the program how many numbers will be entered. Be prepared to handle any nonnegative quantity of numbers.
 
 ### 3. Floating-point calculation
+###### Status: Complete (9-Oct-19)
 Write a program to read a positive integer N and print out the sum of the first N terms of the alternating harmonic series.
 
 The alternating harmonic series is
@@ -21,6 +24,7 @@ For example, if N = 3, then the sum is 1 - 1/2 + 1/3 = 0.83333
 If the user enters a negative value for N, print an error message or return an error value instead of attempting to compute the sum of the series. 
 
 ### 4. Text file format conversion
+###### Status: Complete (9-Oct-19)
 Write a program that will take a text file with lines in this format:
 
 ```
@@ -53,6 +57,7 @@ Alan Turing:0
 Note that first and last names can contain spaces. The delimiter between fields in the original file will be colon (:), not space. 
 
 ### 5. Concurrency
+###### Status: Not started
 Two agents are exploring a 9x9 grid of square rooms:
 ```
  	1	2	3
@@ -65,6 +70,7 @@ There are four treasures: an emerald, a crown, a coin, and a rare book. At the b
 (If you are working in a language in which conventional output is difficult, you may accumulate the information about treasure-finding in a list or similar data structure, and then return or display this list at the end of the program run.)
 
 ### 6. Semester homework problem
+###### Status: Not started
 Solve the semester homework problem (that is, the problem you've solved in Scheme, Ada, and Prolog) in your chosen language. If needed, you may adapt the input/output format of the problem to fit your language. For example, you may use conventional input/output, or you may write a function that takes the "input" as its parameters and returns the "output" value, or you may use a web-based interface.
 
 ## Built with
