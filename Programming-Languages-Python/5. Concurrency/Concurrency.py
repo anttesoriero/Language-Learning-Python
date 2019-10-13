@@ -1,1 +1,1 @@
-# Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 9 2019, Concurrency
+# Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 2019, Concurrency
