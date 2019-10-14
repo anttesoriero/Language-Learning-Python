@@ -58,7 +58,7 @@ Note that first and last names can contain spaces. The delimiter between fields 
 
 ### 5. Concurrency
 ###### Status: In progress
-Two agents are exploring a 9x9 grid of square rooms:
+Two agents are exploring a 3x3 grid of square rooms:
 ```
  	1	2	3
  	4	5	6
@@ -71,7 +71,7 @@ There are four treasures: an emerald, a crown, a coin, and a rare book. At the b
 
 ### 6. Semester homework problem
 ###### Status: Not started
-Solve the semester homework problem (that is, the problem you've solved in Scheme, Ada, and Prolog) in your chosen language. If needed, you may adapt the input/output format of the problem to fit your language. For example, you may use conventional input/output, or you may write a function that takes the "input" as its parameters and returns the "output" value, or you may use a web-based interface.
+Solve the [semester homework problem](/SEMESTERHW.md) (that is, the problem you've solved in Scheme, Ada, and Prolog) in your chosen language. If needed, you may adapt the input/output format of the problem to fit your language. For example, you may use conventional input/output, or you may write a function that takes the "input" as its parameters and returns the "output" value, or you may use a web-based interface.
 
 ## Built with
 * [Python](https://www.python.org) - Programming language
