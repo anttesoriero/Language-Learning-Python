@@ -14,13 +14,16 @@ class Concurrency:
 	def __init__(self):
 
 		# Size of grid (n x n)
-		self.n = int(input("What is the size of your grid? (n x n) "))
-		# self.n = 3
+		# self.n = int(input("What is the size of your grid? (n x n) "))
+		self.n = 3
+		print("Set to (", self.n, "x", self.n, ") grid.")
+		print()
 		print("1. Spiral Run: Agents start in opposite corners, and move counter-clockwise around the grid.")
 		print("2. Random Run: Agents start in random rooms, and move in random directions until the germs are found.")
-		
 		self.version = int(input("Would you like to run 1 or 2? "))
-		# self.version = 1
+		
+		self.version = 1
+		
 		self.moves = 0
 
 		# Initialize agents [Name, space, current direction]
@@ -149,7 +152,12 @@ class Concurrency:
 			self.turnBothLeft()
 		self.moveBoth()
 		self.gemCheck(self.agent1)
-		print("All gems found in", self.moves, "moves!")
+		self.gemCheck(self.agent2)
+		if self.foundGems is 4:
+			print("All gems found in", self.moves, "moves!")
+		else:
+			print("FAILED")
+			print(self.gems)
 		
 	# ---------- Random Moving for Version 2 ---------- #
 		
