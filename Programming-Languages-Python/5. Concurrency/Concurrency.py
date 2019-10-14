@@ -7,6 +7,8 @@
 
 import random
 
+# ---------- Initialization ---------- #
+
 # Size of grid (n x n)
 # n = input("What is the size of your grid? (n x n) ")
 n = 3
@@ -16,7 +18,6 @@ agent1 = ["Agent 1", 1]
 agent2 = ["Agent 2", n**2]
 # Number of gems found out of 4
 foundGems = 0
-
 
 # Gets 4 unique random nums
 rands = []
@@ -33,6 +34,8 @@ book = ["a rare book", rands[3]]
 
 # List of gems
 gems = [emerald, crown, coin, book]
+
+# ---------- Functions ---------- #
 
 # Checks if direction attempt is valid
 # dir: 1 = north, 2 = east, 3 = south, 4 = west
@@ -56,16 +59,13 @@ def checkDir(self, agent, dir):
 	# No failures
 	return True
 
-# print(checkDir(agent1, 1), checkDir(agent1, 2), checkDir(agent1, 3), checkDir(agent1, 4))
-
+# Finds gem with agent
 def findGem(gem, agent):
 	global foundGems
 	foundGems	+= 1
 	print(agent[0], "found", gem[0], "in room", gem[1])
 	print(4-foundGems, "gems left.")
 	gem[1] = -1
-	
-# findGem(emerald, agent1)
 
 # Find if agent position equals gems
 def gemCheck(agent):
@@ -73,4 +73,6 @@ def gemCheck(agent):
 		if agent[1] is i[1]:
 			findGem(i, agent)
 			
-gemCheck(agent1)
+# ---------- Driver ---------- #
+
+
