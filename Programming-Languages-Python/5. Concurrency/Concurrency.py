@@ -65,12 +65,12 @@ def findGem(gem, agent):
 	print(4-foundGems, "gems left.")
 	gem[1] = -1
 	
-findGem(emerald, agent1)
+# findGem(emerald, agent1)
 
 # Find if agent position equals gems
 def gemCheck(agent):
 	for i in gems:
-		if agent[1] is gems[i[1]]:
-			findGem(gems[i], agent)
+		if agent[1] is i[1]:
+			findGem(i, agent)
 			
 gemCheck(agent1)
