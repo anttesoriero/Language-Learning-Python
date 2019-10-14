@@ -1,7 +1,7 @@
 # Semester Homework problem
 #### by [Dr. Nancy Tinkham](elvis.rowan.edu/~nlt)
 
-### General problem description
+## General problem description
 
 You will write a program which compares the accuracy of two medical tests for diagnosing a particular disease.
 
@@ -66,11 +66,11 @@ P(A | B) =   the number of patients with properties A and B
              ----------------------------------------------
              the number of patients with property B
 ```
-### Sample calculations
+## Sample calculations
 
 Note: In the examples below, the headings ("Patient number", etc.) are provided only for readability. The actual input data will consist only of numbers.
 
-#### Example 1:
+### Example 1:
 ```
 Input:
 
@@ -94,7 +94,7 @@ P(H | Neg1) = .83
 P(H | Neg2) = .75
 Neither test is better
 ```
-Rationale:
+#### Rationale:
 
 3 patients have the disease and tested positive on test 1.
 4 patients tested positive on test 1.
@@ -109,7 +109,7 @@ P(H | Neg1) = 5 / 6 = .83
 8 patients tested negative on test 2.
 P(H | Neg2) = 6 / 8 = 3 / 4 = .75
 Neither test is better, since P(D | Pos1) < P(D | Pos2) but P(H | Neg1) > P(H | Neg2).
-#### Example 2:
+### Example 2:
 ```
 Input:
 
@@ -131,7 +131,7 @@ P(H | Neg1) = .83
 P(H | Neg2) = .67
 Test 1 is better
 ```
-Rationale:
+#### Rationale:
 
 1 patient has the disease and tested positive on test 1.
 2 patients tested positive on test 1.
