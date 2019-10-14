@@ -58,7 +58,7 @@ Note that first and last names can contain spaces. The delimiter between fields 
 
 ### 5. Concurrency
 ###### Status: In progress
-Two agents are exploring a 9x9 grid of square rooms:
+Two agents are exploring a 3x3 grid of square rooms:
 ```
  	1	2	3
  	4	5	6
