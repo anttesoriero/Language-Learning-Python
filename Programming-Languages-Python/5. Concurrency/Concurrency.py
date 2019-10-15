@@ -22,7 +22,7 @@ class Concurrency:
 		print("2. Random Run: Agents start in random rooms, and move in random directions until the germs are found.")
 		self.version = int(input("Would you like to run 1 or 2? "))
 		
-		self.version = 1
+		# self.version = 1
 		
 		self.moves = 0
 
