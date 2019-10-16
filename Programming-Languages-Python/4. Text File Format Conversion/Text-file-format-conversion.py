@@ -1,4 +1,4 @@
-# Programming Languages Fall 2019 Python Group, Text file format conversion
+# Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 9 2019, Text file format conversion
 # Status: Complete, to be submitted
 
 # Creates and clears a new text file
