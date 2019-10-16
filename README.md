@@ -1,4 +1,4 @@
-# Programming-Lanuages-Python
+# Programming Lanuages: Language-Learning Project - Python
 For the python group, fall 2019 Programming Languages class, [Dr. Nancy Tinkham](http://elvis.rowan.edu/~nlt/), at Rowan University.
 The purpose of these assignments is to learn a new programming language.
 
