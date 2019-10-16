@@ -3,21 +3,20 @@
 
 ## General problem description
 
-You will write a program which compares the accuracy of two medical tests for diagnosing a particular disease.
+#### You will write a program which compares the accuracy of two medical tests for diagnosing a particular disease.
 
-The input to your program will be a list of data about a collection of patients specifying
+The input to your program will be a list of data about a collection of patients specifying:
 
-Whether the patient has the disease, Whether the result of test 1 was positive, Whether the result of test 2 was positive, The input format will be a sequence of entries of this form:
+1. Whether the patient has the disease
+2. Whether the result of test 1 was positive
+3. Whether the result of test 2 was positive
 
-A positive integer, which is the number of the patient. 
+The input format will be a sequence of entries of this form:
 
-Patients will be numbered in increasing consecutive order, starting at 1.
-
-The number 1 or 0: 1 if the patient has the disease, and 0 if the patient does not have the disease
-
-The number 1 or 0: 1 if the patient tested positive on test 1, and 0 of the patient tested negative on test 1
-
-The number 1 or 0: 1 if the patient tested positive on test 2, and 0 of the patient tested negative on test 2
+1. A positive integer, which is the number of the patient. Patients will be numbered in increasing consecutive order, starting at 1.
+2. The number 1 or 0: 1 if the patient has the disease, and 0 if the patient does not have the disease
+3. The number 1 or 0: 1 if the patient tested positive on test 1, and 0 of the patient tested negative on test 1
+4. The number 1 or 0: 1 if the patient tested positive on test 2, and 0 of the patient tested negative on test 2
 
 For example, the list
 ```
@@ -26,6 +25,7 @@ For example, the list
    3 1 1 1
 ```
 means that patient 1 does not have the disease, and tested negative on both tests; patient 2 has the disease, and tested positive on test 1 but negative on test 2; and patient 3 has the disease and tested positive on both tests.
+
 Ideally, of course, we would like medical tests to be exactly accurate: the test result would be positive for any patient who has the disease, and negative for any patient who does not have the disease. In reality, most tests are not that accurate: some healthy patients test positive, and some sick patients test negative.
 
 The output of the program will be four conditional probabilities, followed by a statement of which test (if either) is more accurate for this set of patients. Define six events:
@@ -71,9 +71,8 @@ P(A | B) =   the number of patients with properties A and B
 Note: In the examples below, the headings ("Patient number", etc.) are provided only for readability. The actual input data will consist only of numbers.
 
 ### Example 1:
+#### Input:
 ```
-Input:
-
 Patient number          Has disease     Test1 positive  Test2 positive
 
 1                       1               1               0
@@ -86,8 +85,9 @@ Patient number          Has disease     Test1 positive  Test2 positive
 8                       1               0               1
 9                       0               1               0
 10                      0               0               0
-Output:
-
+```
+#### Output:
+```
 P(D | Pos1) = .75
 P(D | Pos2) = 1
 P(H | Neg1) = .83
@@ -96,23 +96,15 @@ Neither test is better
 ```
 #### Rationale:
 
-3 patients have the disease and tested positive on test 1.
-4 patients tested positive on test 1.
-P(D | Pos1) = 3 / 4 = .75
-2 patients have the disease and tested positive on test 2.
-2 patients tested positive on test 2.
-P(D | Pos2) = 2 / 2 = 1
-5 patients are healthy and tested negative on test 1.
-6 patients tested negative on test 1.
-P(H | Neg1) = 5 / 6 = .83
-6 patients are healthy and tested negative on test 2.
-8 patients tested negative on test 2.
-P(H | Neg2) = 6 / 8 = 3 / 4 = .75
+- 3 patients have the disease and tested positive on test 1. 4 patients tested positive on test 1. P(D | Pos1) = 3 / 4 = .75
+- 2 patients have the disease and tested positive on test 2. 2 patients tested positive on test 2. P(D | Pos2) = 2 / 2 = 1
+- 5 patients are healthy and tested negative on test 1. 6 patients tested negative on test 1. P(H | Neg1) = 5 / 6 = .83
+- 6 patients are healthy and tested negative on test 2. 8 patients tested negative on test 2. P(H | Neg2) = 6 / 8 = 3 / 4 = .75
+
 Neither test is better, since P(D | Pos1) < P(D | Pos2) but P(H | Neg1) > P(H | Neg2).
 ### Example 2:
+#### Input:
 ```
-Input:
-
 Patient number          Has disease     Test1 positive  Test2 positive
 
 1                       1               0               1
@@ -123,8 +115,9 @@ Patient number          Has disease     Test1 positive  Test2 positive
 6                       0               0               0
 7                       0               0               1
 8                       0               1               1
-Output:
-
+```
+#### Output:
+```
 P(D | Pos1) = .5
 P(D | Pos2) = .2
 P(H | Neg1) = .83
@@ -132,22 +125,19 @@ P(H | Neg2) = .67
 Test 1 is better
 ```
 #### Rationale:
+- 1 patient has the disease and tested positive on test 1. 2 patients tested positive on test 1. P(D | Pos1) = 1 / 2 = .5
+- 1 patient has the disease and tested positive on test 2. 5 patients tested positive on test 2. P(D | Pos2) = 1 / 5 = .2
+- 5 patients are healthy and tested negative on test 1. 6 patients tested negative on test 1. P(H | Neg1) = 5 / 6 = .83
+- 2 patients are healthy and tested negative on test 2. 3 patients tested negative on test 2. P(H | Neg2) = 2 / 3 = .67
 
-1 patient has the disease and tested positive on test 1.
-2 patients tested positive on test 1.
-P(D | Pos1) = 1 / 2 = .5
-1 patient has the disease and tested positive on test 2.
-5 patients tested positive on test 2.
-P(D | Pos2) = 1 / 5 = .2
-5 patients are healthy and tested negative on test 1.
-6 patients tested negative on test 1.
-P(H | Neg1) = 5 / 6 = .83
-2 patients are healthy and tested negative on test 2.
-3 patients tested negative on test 2.
-P(H | Neg2) = 2 / 3 = .67
 Test 1 is better, since P(D | Pos1) > P(D | Pos2) and P(H | Neg1) > P(H | Neg2).
-A note on I/O format
+
+## Other information
+
+### A note on I/O format
 
 The exact format of the input and output will be slightly different for the three different languages, to make the input and output as easy as possible in each different language. The three input/output specifications for the three different languages are given below.
 
-An assumption about the input Assume that, in all cases, at least one person will test positive on test 1, and at least one person will test positive on test 2. Thus, you do not have to worry about dividing by zero in your conditional probability calculations.
+### An assumption about the input
+
+Assume that, in all cases, at least one person will test positive on test 1, and at least one person will test positive on test 2. Thus, you do not have to worry about dividing by zero in your conditional probability calculations.
