@@ -1,4 +1,5 @@
 # Programming Languages Fall 2019 Python Group, Floating-point Calculation
+# Status: Complete, to be submitted
 
 # Checks if the input is an integer
 while True:
