@@ -1,4 +1,5 @@
 # Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 2019, Concurrency
+# Status: In progress - Part 1 (Spiral Run) working. Now working on part 2 (Random or Slither Run [Choice TBD])
 
 # Idea Notes
 # Size = n (3 for example); CurrentPosition = pos
