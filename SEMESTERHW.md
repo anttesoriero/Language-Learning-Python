@@ -1,5 +1,5 @@
 # Semester Homework problem
-#### by [Dr. Nancy Tinkham](elvis.rowan.edu/~nlt)
+#### by [Dr. Nancy Tinkham](http://elvis.rowan.edu/~nlt/)
 
 ## General problem description
 
