@@ -1,4 +1,4 @@
-# Programming Languages Fall 2019 Python Group, Floating-point Calculation
+# Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 9 2019, Floating-point Calculation
 # Status: Complete, to be submitted
 
 # Checks if the input is an integer
