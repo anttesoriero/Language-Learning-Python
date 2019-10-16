@@ -3,7 +3,7 @@
 
 ## General problem description
 
-#### You will write a program which compares the accuracy of two medical tests for diagnosing a particular disease.
+**You will write a program which compares the accuracy of two medical tests for diagnosing a particular disease.**
 
 The input to your program will be a list of data about a collection of patients specifying:
 
@@ -28,15 +28,17 @@ means that patient 1 does not have the disease, and tested negative on both test
 
 Ideally, of course, we would like medical tests to be exactly accurate: the test result would be positive for any patient who has the disease, and negative for any patient who does not have the disease. In reality, most tests are not that accurate: some healthy patients test positive, and some sick patients test negative.
 
-The output of the program will be four conditional probabilities, followed by a statement of which test (if either) is more accurate for this set of patients. Define six events:
-```
-Let D be the event that the person has the disease 
-Let H be the event that the person does not have the disease (thus is healthy) 
-Let Pos1 be the event that the person tests positive on test 1 
-Let Neg1 be the event that the person tests negative on test 1 
-Let Pos2 be the event that the person tests positive on test 2 
-Let Neg2 be the event that the person tests negative on test 2
-```
+The output of the program will be four conditional probabilities, followed by a statement of which test (if either) is more accurate for this set of patients. 
+
+Define six events:
+
+1. Let D be the event that the person has the disease 
+2. Let H be the event that the person does not have the disease (thus is healthy) 
+3. Let Pos1 be the event that the person tests positive on test 1 
+4. Let Neg1 be the event that the person tests negative on test 1 
+5. Let Pos2 be the event that the person tests positive on test 2 
+6. Let Neg2 be the event that the person tests negative on test 2
+
 You will compute these four probabilities:
 ```
 P(D | Pos1): The probability that the patient has the disease, given that the result of test 1 was positive 
