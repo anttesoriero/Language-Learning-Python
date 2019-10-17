@@ -1,9 +1,12 @@
-# Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 2019, Concurrency
-# Status: In progress - Part 1 (Spiral Run) working. Now working on part 2 (Random or Slither Run [Choice TBD])
+# Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 17 2019, Concurrency
+# Status: Mostly Completed
+
+# Works for n = 3 and n = 4
 
 # Idea Notes
 # Size = n (3 for example); CurrentPosition = pos
 # North = -n; South = +n; East = +1; West = -1
+
 # --------------------------------------------------------------------------------- #
 
 import random
@@ -20,10 +23,10 @@ class Concurrency:
 		print("Set to (", self.n, "x", self.n, ") grid.")
 		print()
 		print("1. Spiral Run: Agents start in opposite corners, and move counter-clockwise around the grid.")
-		print("2. Random Run: Agents start in random rooms, and move in random directions until the germs are found.")
+		print("2. Slither Run: Agents start in opposite corners, and move in a snaking pattern until the germs are found.")
 		self.version = int(input("Would you like to run 1 or 2? "))
 		
-		# self.version = 1
+		# self.version = 2
 		
 		self.moves = 0
 
@@ -51,13 +54,10 @@ class Concurrency:
 		if self.version is 1:
 			self.printHeader("Spiral Run")
 			self.spiralRun()
-		# Runs randomRun when version 2 is chose. Sets agents locations to random rooms
+		# Runs slitherRun when version 2 is chosen
 		else:
-			# agent1 and agent2 position random
-			self.agent1[1] = random.randint(1, 9)
-			self.agent2[1] = random.randint(1, 9)
-			self.printHeader("Random Run")
-			self.randomRun()
+			self.printHeader("Slither Run")
+			self.slitherRun()
 			
 	def printHeader(self, runName):
 		print()
@@ -115,6 +115,21 @@ class Concurrency:
 		# West turn south
 		else:
 			agent[2] = 3
+	
+	# Turn agent right
+	def turnRight(self, agent):
+		# North turn east
+		if agent[2] is 1:
+			agent[2] = 2
+		# East turn south
+		elif agent[2] is 2:
+			agent[2] = 3
+		# South turn west
+		elif agent[2] is 3:
+			agent[2] = 4
+		# West turn north
+		else:
+			agent[2] = 1
 
 	# Moves agent
 	# dir: 1 = north, 2 = east, 3 = south, 4 = west
@@ -129,42 +144,74 @@ class Concurrency:
 		elif agent[2] is 4 and self.checkDir(agent, agent[2]):
 			agent[1] -= 1
 	
-	# ---------- Spiral Moving for Version 1 ---------- #
-	
 	# Moves both agent1 and agent 2
 	def moveBoth(self):
 		self.moveForward(self.agent1)
 		self.moveForward(self.agent2)
 		self.moves += 1
 	
-	# Turns both agent1 and agent2 counter-clockwise
-	def turnBothLeft(self):
-		self.turnLeft(self.agent1)
-		self.turnLeft(self.agent2)
+	# Turns both agent1 and agent2
+	# dir: 0 for left, 1 for right
+	def turnBoth(self, dir):
+		if dir is 0:
+			self.turnLeft(self.agent1)
+			self.turnLeft(self.agent2)
+		elif dir is 1:
+			self.turnRight(self.agent1)
+			self.turnRight(self.agent2)
+	
+	# ---------- Spiral Moving for Version 1 ---------- #	
 	
 	# Run in a counter-clockwise spiral
 	def spiralRun(self):
 		
 		dec = 0
+		
 		while dec != self.n-1:
 			for i in range(self.n-1 - dec):
 				self.moveBoth()
 			dec += 1
-			self.turnBothLeft()
+			self.turnBoth(0)
+		
 		self.moveBoth()
 		self.gemCheck(self.agent1)
 		self.gemCheck(self.agent2)
+		
 		if self.foundGems is 4:
 			print("All gems found in", self.moves, "moves!")
 		else:
 			print("FAILED")
 			print(self.gems)
 		
-	# ---------- Random Moving for Version 2 ---------- #
+	# ---------- Slither Moving for Version 2 ---------- #
+	
+	# Run in a slither snaking pattern
+	def slitherRun(self):
 		
-	def randomRun(self):
-		return 0
+		dir = 0
+		
+		while self.foundGems is not 4: # and runSafety < 20:
+			# Loop for each column
+			for i in range(self.n):
+				# More forward until wall	
+				for i in range(self.n-1):
+					self.moveBoth()
+				# Mod to return 0 or 1, meaning turn left or right. So dir can just increment	
+				self.turnBoth(dir % 2)
+				self.moveBoth()
+				self.gemCheck(self.agent1)
+				self.gemCheck(self.agent2)
+				self.turnBoth(dir % 2)
+				dir += 1
 				
+			self.turnBoth(1)
+			self.turnBoth(1)
+			
+		if self.foundGems is 4:
+			print("All gems found in", self.moves, "moves!")
+		else:
+			print("FAILED")
+			print(self.gems)
 
 # ---------- Driver ---------- #
 
