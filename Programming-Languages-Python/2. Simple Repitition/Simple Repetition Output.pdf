@@ -1,0 +1,420 @@
+%PDF-1.3
+%‚„œ”
+2 0 obj
+<<
+/Length 1544
+>>
+stream
+0.95 g
+/GS1 gs
+42 818 18 -794 re
+f
+0.7 g
+24 96 36 -72 re
+f
+BT
+/TT2 1 Tf
+0 12 -12 0 40 38.666 Tm
+0 g
+0 Tc
+0 Tw
+(10/19/19)Tj
+-0.0552 -1.0667 TD
+(10:54:57)Tj
+ET
+0.7 g
+24 818 36 -72 re
+f
+BT
+/TT4 1 Tf
+0 28.8 -28.8 0 52.8 773.9915 Tm
+1 g
+(1)Tj
+/TT6 1 Tf
+0 14 -14 0 55.5 360.9224 Tm
+0 g
+(Simple-Repetition.py)Tj
+/TT8 1 Tf
+0 10 -10 0 73 54 Tm
+(1:)Tj
+/TT10 1 Tf
+1.8 0 TD
+(# Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 9 2019, Simple Repetition)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(2:)Tj
+/TT10 1 Tf
+1.8 0 TD
+(# Status: Complete, to be submitted)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(3:)Tj
+T*
+(4:)Tj
+/TT10 1 Tf
+1.8 0 TD
+(# Prints statement for user inpit)Tj
+/TT8 1 Tf
+-1.8 -1.1 TD
+(5:)Tj
+/TT12 1 Tf
+1.8 0 TD
+(print)Tj
+/TT8 1 Tf
+3 0 TD
+(\()Tj
+/TT12 1 Tf
+0.6 0 TD
+("Input each of your numbers, pressing return after each one. Enter íxí when done.")Tj
+/TT8 1 Tf
+49.2 0 TD
+(\))Tj
+-54.6 -1.1 TD
+[(6:)-599.8(sum = 0.0)]TJ
+T*
+[(7:)-599.8(n = 0)]TJ
+T*
+(8:)Tj
+T*
+(9:)Tj
+/TT10 1 Tf
+1.8 0 TD
+(# Loops through input with summation)Tj
+/TT8 1 Tf
+-2.4 -1.1 TD
+(10:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(while)Tj
+/TT8 1 Tf
+3 0 TD
+( n != )Tj
+/TT12 1 Tf
+3.6 0 TD
+("x")Tj
+/TT8 1 Tf
+1.8 0 TD
+(:)Tj
+-10.8 -1.1 TD
+[(11:)-599.7(        n = input\()]TJ
+/TT12 1 Tf
+13.2 0 TD
+("Input: ")Tj
+/TT8 1 Tf
+5.4 0 TD
+(\))Tj
+-18.6 -1.1 TD
+[(12:)-599.7(        )]TJ
+/TT12 1 Tf
+7.2 0 TD
+(if)Tj
+/TT8 1 Tf
+1.2 0 TD
+( n != )Tj
+/TT12 1 Tf
+3.6 0 TD
+("x")Tj
+/TT8 1 Tf
+1.8 0 TD
+(:)Tj
+-13.8 -1.1 TD
+[(13:)-599.7(                sum += float\(n\))]TJ
+T*
+(14:)Tj
+/TT12 1 Tf
+2.4 0 TD
+(print)Tj
+/TT8 1 Tf
+3 0 TD
+(\(sum\))Tj
+ET
+endstream
+endobj
+3 0 obj
+<<
+/ProcSet [/PDF /Text ]
+/Font <<
+/TT2 4 0 R
+/TT4 5 0 R
+/TT6 6 0 R
+/TT8 7 0 R
+/TT10 8 0 R
+/TT12 9 0 R
+>>
+/ExtGState <<
+/GS1 10 0 R
+>>
+>>
+endobj
+10 0 obj
+<<
+/Type /ExtGState
+/SA false
+/SM 0.02
+/OP false
+/op false
+/OPM 1
+/BG2 /Default
+/UCR2 /Default
+/HT /Default
+/TR2 /Default
+>>
+endobj
+12 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 676
+/Descent -250
+/Flags 262178
+/FontBBox [-168 -218 1000 935]
+/FontName /Times-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 461
+/StemH 139
+>>
+endobj
+13 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 770
+/CapHeight 718
+/Descent -229
+/Flags 262176
+/FontBBox [-170 -228 1003 962]
+/FontName /Helvetica-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 532
+/StemH 140
+>>
+endobj
+14 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 750
+/CapHeight 662
+/Descent -250
+/Flags 34
+/FontBBox [-168 -218 1000 898]
+/FontName /Times-Roman
+/ItalicAngle 0
+/StemV 84
+/XHeight 450
+/StemH 84
+>>
+endobj
+15 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 35
+/FontBBox [-28 -250 628 805]
+/FontName /Courier
+/ItalicAngle 0
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+16 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 99
+/FontBBox [-28 -250 742 805]
+/FontName /Courier-Oblique
+/ItalicAngle -15
+/StemV 51
+/XHeight 426
+/StemH 51
+>>
+endobj
+17 0 obj
+<<
+/Type /FontDescriptor
+/Ascent 753
+/CapHeight 562
+/Descent -246
+/Flags 262179
+/FontBBox [-113 -250 749 801]
+/FontName /Courier-Bold
+/ItalicAngle 0
+/StemV 133
+/XHeight 439
+/StemH 84
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 47
+/LastChar 58
+/Widths [278 500 500 0 0 500 500 0 500 0 500 333 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Bold
+/FontDescriptor 12 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 49
+/LastChar 49
+/Widths [556 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Helvetica-Bold
+/FontDescriptor 13 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 45
+/LastChar 121
+/Widths [333 250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 667 556 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 444 0 0 0 278 0 0 278 
+778 500 500 500 0 0 0 278 0 0 0 0 500 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Times-Roman
+/FontDescriptor 14 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 117
+/Widths [600 600 0 0 0 0 0 0 600 600 0 600 0 0 600 0 
+600 600 600 600 600 600 600 600 600 600 600 0 0 600 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 0 0 0 0 600 0 0 600 0 0 600 600 600 600 
+600 0 0 600 600 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier
+/FontDescriptor 15 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 121
+/Widths [600 0 0 600 0 0 0 0 0 0 0 0 600 0 0 0 
+600 600 600 0 0 0 0 0 0 600 600 0 0 0 0 0 
+0 600 0 600 0 0 0 0 0 0 600 0 600 0 0 600 
+600 0 600 600 600 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 600 600 600 600 600 
+600 0 600 600 600 600 0 600 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Oblique
+/FontDescriptor 16 0 R
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/Subtype /TrueType
+/FirstChar 32
+/LastChar 146
+/Widths [600 0 600 0 0 0 0 0 0 0 0 0 600 0 600 0 
+0 0 0 0 0 0 0 0 0 0 600 0 0 0 0 0 
+0 0 0 0 0 600 0 0 0 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 600 600 600 600 600 600 600 600 600 0 0 600 600 600 600 
+600 0 600 600 600 600 0 600 600 600 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 600 ]
+/Encoding /WinAnsiEncoding
+/BaseFont /Courier-Bold
+/FontDescriptor 17 0 R
+>>
+endobj
+1 0 obj
+<<
+/Type /Page
+/Parent 11 0 R
+/Resources 3 0 R
+/Contents 2 0 R
+>>
+endobj
+18 0 obj
+<<
+/S /D
+>>
+endobj
+19 0 obj
+<<
+/Nums [0 18 0 R ]
+>>
+endobj
+11 0 obj
+<<
+/Type /Pages
+/Kids [1 0 R]
+/Count 1
+/Rotate 90
+/MediaBox [0 0 595 842]
+>>
+endobj
+20 0 obj
+<<
+/CreationDate (D:20191019110624-04'00')
+/ModDate (D:20191019110624-04'00')
+/Producer (PSNormalizer.framework)
+>>
+endobj
+21 0 obj
+<<
+/Type /Catalog
+/Pages 11 0 R
+/PageLabels 19 0 R
+>>
+endobj
+xref
+0 22
+0000000000 65535 f 
+0000005109 00000 n 
+0000000016 00000 n 
+0000001612 00000 n 
+0000003105 00000 n 
+0000003307 00000 n 
+0000003477 00000 n 
+0000003825 00000 n 
+0000004220 00000 n 
+0000004649 00000 n 
+0000001765 00000 n 
+0000005258 00000 n 
+0000001906 00000 n 
+0000002108 00000 n 
+0000002314 00000 n 
+0000002511 00000 n 
+0000002702 00000 n 
+0000002903 00000 n 
+0000005190 00000 n 
+0000005218 00000 n 
+0000005351 00000 n 
+0000005483 00000 n 
+trailer
+<<
+/Size 22
+/Root 21 0 R
+/Info 20 0 R
+/ID [<3b3cb0f58557c085b51c755347990a78><3b3cb0f58557c085b51c755347990a78>]
+>>
+startxref
+5553
+%%EOF
