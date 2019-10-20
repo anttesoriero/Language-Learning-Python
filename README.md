@@ -76,7 +76,7 @@ There are four treasures: an emerald, a crown, a coin, and a rare book. At the b
 Solve the [semester homework problem](/SEMESTERHW.md) (that is, the problem you've solved in Scheme, Ada, and Prolog) in your chosen language. If needed, you may adapt the input/output format of the problem to fit your language. For example, you may use conventional input/output, or you may write a function that takes the "input" as its parameters and returns the "output" value, or you may use a web-based interface.
 
 ## Built with
-* [Python](https://www.python.org) - Programming language
+* [Python](https://www.python.org) - A multi-paradigm scripting language that emphasizes readability
 * [PyCharm](https://www.jetbrains.com/pycharm/) - Python IDE
 * [Enscript](https://medium.com/@tashian/print-out-your-code-on-paper-7c760a376bca) - Printing out code efficiently
 
