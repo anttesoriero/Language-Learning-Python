@@ -5,5 +5,4 @@
 # as input parameters and returns the sum of the two numbers.)
 
 print("The sum of the two numbers is " + str(
-    float(input("What is the first number? ")) +
-    float(input("What is the second number? "))))
+    float(input("What is the first number? ")) + float(input("What is the second number? "))))
