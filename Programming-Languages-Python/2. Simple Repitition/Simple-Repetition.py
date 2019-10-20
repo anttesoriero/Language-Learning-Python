@@ -1,5 +1,5 @@
 # Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 9 2019, Simple Repetition
-# Status: Complete, to be submitted
+# Status: Complete and Submitted
 
 # Prints statement for user inpit
 print("Input each of your numbers, pressing return after each one. Enter 'x' when done.")
