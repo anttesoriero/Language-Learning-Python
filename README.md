@@ -57,7 +57,7 @@ Alan Turing:0
 Note that first and last names can contain spaces. The delimiter between fields in the original file will be colon (:), not space. 
 
 ### 5. Concurrency
-###### Status: In progress
+###### Status: Complete (17-October-2019)
 Two agents are exploring a 3x3 grid of square rooms:
 ```
  	1	2	3
