@@ -1,5 +1,5 @@
 # Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 9 2019, Floating-point Calculation
-# Status: Complete, to be submitted
+# Status: Submitted 4 November 2019
 
 # Checks if the input is an integer
 while True:
