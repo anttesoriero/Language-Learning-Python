@@ -15,9 +15,9 @@ if n < 1:
 else:
 	sum = 0.0
 	count = 0
-  # Used to alternate the sign
+	# Used to alternate the sign
 	m = -1
-  # Loops through values to the chosen integer, summing up values from 1 to 1/n, alterating the sign
+	# Loops through values to the chosen integer, summing up values from 1 to 1/n, alterating the sign
 	for i in range(n):
 		# Sums up values from 1 to 1/n, alternating the sign
 		sum += (-1 * m) * (1 / (i + 1))

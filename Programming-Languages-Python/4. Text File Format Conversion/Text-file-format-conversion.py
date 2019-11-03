@@ -1,5 +1,5 @@
 # Anthony Tesoriero, Joseph Salemo, Joshua Lunsk, October 9 2019, Text file format conversion
-# Status: Complete, to be submitted
+# Status: Submitted 4 November 2019
 
 # Creates and clears a new text file
 open('namesSplit.txt', 'w').close()
