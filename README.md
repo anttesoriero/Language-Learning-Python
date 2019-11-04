@@ -2,6 +2,11 @@
 For the python group, fall 2019 Programming Languages class, [Dr. Nancy Tinkham](http://elvis.rowan.edu/~nlt/), at Rowan University.
 The purpose of these assignments is to learn a new programming language.
 
+#### -- Note -- 
+This repository will most likely be updated to be more than just Python projects. I feel these are very good basic programs to do in all the languages I know, and more I want to learn, this way I can keep practicing in my free time. As time goes on, I will be adding more of these projects in different langauges, to their respective directories.
+
+Also, I may add more basic programs for each language if I find more cool ones to do. I have already started doing the ["FizzBuzz Problem"](https://github.com/anttesoriero/FizzBuzz), which ***may*** be migrated to this repository later.
+
 ## Assignments
 ### 1. Beginner's program
 ###### Status: Complete (9-Oct-19)
@@ -86,4 +91,4 @@ Solve the [semester homework problem](/SEMESTERHW.md) (that is, the problem you'
 * Joshua Lunsk
 
 ## Credits
-* All credit for these questions go to [Dr. Nancy Tinkham](http://elvis.rowan.edu/~nlt). Questions are from her class document.
+All credit for questions 1 through 6 go to [Dr. Nancy Tinkham](http://elvis.rowan.edu/~nlt). Questions are from her class document.
