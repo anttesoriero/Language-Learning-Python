@@ -1,6 +1,23 @@
 # Semester Homework problem
 #### by [Dr. Nancy Tinkham](http://elvis.rowan.edu/~nlt/)
 
+Input for each language differs. For this problem in Python, taking the data in from a file seems like the most practical option. To do this, the first line will be the number of patients there are, and every line after will be the four data points, separated by spaces.
+
+Here's an example:
+```
+10
+1   1   1   0
+2   1   1   1
+3   0   0   0
+4   0   0   0
+5   1   1   0
+6   0   0   0
+7   0   0   0
+8   1   0   1
+9   0   1   0
+10  0   0   0
+```
+
 ## General problem description
 
 **You will write a program which compares the accuracy of two medical tests for diagnosing a particular disease.**
@@ -138,7 +155,7 @@ Test 1 is better, since P(D | Pos1) > P(D | Pos2) and P(H | Neg1) > P(H | Neg2).
 
 ### A note on I/O format
 
-The exact format of the input and output will be slightly different for the three different languages, to make the input and output as easy as possible in each different language. The three input/output specifications for the three different languages are given below.
+The exact format of the input and output will be slightly different for the three different languages, to make the input and output as easy as possible in each different language.
 
 ### An assumption about the input
 
