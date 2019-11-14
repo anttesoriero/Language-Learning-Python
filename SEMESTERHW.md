@@ -1,11 +1,10 @@
 # Semester Homework problem
 #### by [Dr. Nancy Tinkham](http://elvis.rowan.edu/~nlt/)
 
-Input for each language differs. For this problem in Python, taking the data in from a file seems like the most practical option. To do this, the first line will be the number of patients there are, and every line after will be the four data points, separated by spaces.
+Input for each language differs. For this problem in Python, taking the data in from a file seems like the most practical option. To do this, every line will be the four data points, separated by spaces.
 
 Here's an example:
 ```
-10
 1   1   1   0
 2   1   1   1
 3   0   0   0
