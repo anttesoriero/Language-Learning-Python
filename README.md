@@ -77,12 +77,14 @@ There are four treasures: an emerald, a crown, a coin, and a rare book. At the b
 (If you are working in a language in which conventional output is difficult, you may accumulate the information about treasure-finding in a list or similar data structure, and then return or display this list at the end of the program run.)
 
 ### 6. Semester homework problem
-###### Status: Not started
+###### Status: Complete (14-Nov-2019)
 Solve the [semester homework problem](/SEMESTERHW.md) (that is, the problem you've solved in Scheme, Ada, and Prolog) in your chosen language. If needed, you may adapt the input/output format of the problem to fit your language. For example, you may use conventional input/output, or you may write a function that takes the "input" as its parameters and returns the "output" value, or you may use a web-based interface.
 
 ## Built with
 * [Python](https://www.python.org) - A multi-paradigm scripting language that emphasizes readability
 * [PyCharm](https://www.jetbrains.com/pycharm/) - Python IDE
+* [Pythonista](http://omz-software.com/pythonista/) - A Full Python IDE for iOS
+* [Working Copy](https://workingcopyapp.com) - Powerful Git client for iOS
 * [Enscript](https://medium.com/@tashian/print-out-your-code-on-paper-7c760a376bca) - Printing out code efficiently
 
 ## Authors
