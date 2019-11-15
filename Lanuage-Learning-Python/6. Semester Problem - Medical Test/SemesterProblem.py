@@ -43,10 +43,10 @@ for data in PatientData:
 		if diseaseVal == 0:
 			notDiseaseNotTest2 += 1
 
-DP1 = float(diseaseTest1)/test1
-DP2 = float(diseaseTest2)/test2
-HN1 = float(notDiseaseNotTest1)/notTest1
-HN2 = float(notDiseaseNotTest2)/notTest2
+DP1 = round(float(diseaseTest1)/test1, 3)
+DP2 = round(float(diseaseTest2)/test2, 3)
+HN1 = round(float(notDiseaseNotTest1)/notTest1, 3)
+HN2 = round(float(notDiseaseNotTest2)/notTest2, 3)
 
 if DP1 > DP2 and HN1 > HN2:
 	decision = "Test 1 is better"
