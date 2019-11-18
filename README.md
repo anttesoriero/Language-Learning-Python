@@ -1,4 +1,5 @@
 # Language-Learning Project - Python - For Programming Languages F19
+###### Status: All 6 programs **complete** as of 14-Nov-2019
 For the python group, fall 2019 Programming Languages class, [Dr. Nancy Tinkham](http://elvis.rowan.edu/~nlt/), at Rowan University.
 The purpose of these assignments is to learn a new programming language.
 
